@@ -1,0 +1,39 @@
+.navItem-navlink-style {
+  color: black !important;
+  margin-right: 18px;
+  font-size: 20px;
+  font-family: merienda;
+  font-weight: bold;
+}
+.navItem-navlink-style:hover {
+  color: #ca6f1e !important;
+}
+
+.navbar_booking-button {
+  font-family: merienda;
+  font-weight: bold;
+  background: #ca6f1e;
+  padding: 13px;
+  border-radius: 50px;
+}
+.navbar_booking-button:hover {
+  background: #af601a;
+}
+@media (max-width: 768px) {
+  .navbar_booking-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.navbar_booking-button_room {
+  font-family: merienda;
+  font-weight: bold;
+  background: #ca6f1e;
+  width: 100%;
+  padding: 13px;
+  border-radius: 50px;
+}
+.navbar_booking-button_room:hover {
+  background: #af601a;
+}

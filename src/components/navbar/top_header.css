@@ -1,0 +1,30 @@
+.left-icon-text {
+  color: #ffffff;
+  margin-right: 1%;
+}
+.left-icon-text:hover {
+  color: #ca6f1e;
+}
+.icons_right {
+  color: #c0c0c0;
+}
+.icons_right:hover {
+  color: #ffffff;
+}
+
+.text-xs-center {
+  text-align: center !important;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .text-md-left {
+    text-align: left !important;
+    margin-bottom: 0;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+    margin-bottom: 0;
+  }
+}

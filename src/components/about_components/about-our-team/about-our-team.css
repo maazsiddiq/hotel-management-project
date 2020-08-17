@@ -1,0 +1,9 @@
+.team-icons {
+  color: #c0c0c0;
+  margin-right: 15px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.team-icons:hover {
+  color: #ca6f1e;
+}

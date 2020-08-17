@@ -1,0 +1,18 @@
+.contact-send-button {
+  font-family: merienda;
+  font-weight: bold;
+  background: #ca6f1e;
+  padding: 13px;
+  border-radius: 50px;
+}
+.contact-send-button:hover {
+  background: #af601a;
+}
+.icon-right-text-hover:hover {
+  color: #af601a;
+}
+@media (max-width: 700px) {
+  .bottom-space {
+    margin-bottom: 40px;
+  }
+}

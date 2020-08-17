@@ -1,0 +1,11 @@
+.few-words-heading-main {
+  font-family: merianda;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+@media (max-width: 600px) {
+  .few-words-heading-main {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}

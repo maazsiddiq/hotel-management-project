@@ -1,0 +1,26 @@
+.text-xs-center-f {
+  text-align: center !important;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .text-md-left-f {
+    text-align: left !important;
+    margin-bottom: 0;
+  }
+
+  .text-md-right-f {
+    text-align: right !important;
+    margin-bottom: 0;
+  }
+}
+
+.font-style {
+  color: #c0c0c0;
+}
+.font-style:hover {
+  color: #ffffff;
+}
+.center-text-span:hover {
+  color: #ca6f1e;
+}

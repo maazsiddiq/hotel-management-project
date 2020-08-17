@@ -1,0 +1,17 @@
+.inner {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.inner Img {
+  transition: all 1.5s ease;
+}
+.inner:hover Img {
+  transform: scale(1.5);
+}
+
+.room-name {
+  color: #000000;
+}
+.room-name:hover {
+  color: #ca6f1e;
+}
