@@ -18,7 +18,7 @@ const OurSuites = (props) => {
               style={{ borderRadius: "10px", width: "100%", height: "250px" }}
             />
           </div>
-
+          <div></div>
           <CardBody>
             <CardTitle className="room-name">
               {props.rooms}{" "}
