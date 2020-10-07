@@ -37,10 +37,10 @@ const About = () => {
 
       <div
         style={{
-          marginTop: "6%",
+          marginTop: "80px",
           background: "#F7F7F7",
-          paddingTop: "32px",
-          paddingBottom: "32px",
+          paddingTop: "42px",
+          paddingBottom: "42px",
         }}
       >
         <Container fluid>

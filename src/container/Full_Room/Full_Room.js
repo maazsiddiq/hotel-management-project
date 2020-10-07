@@ -17,11 +17,6 @@ const FullRoom = (props) => {
   });
   const [selectedRoom, setSelectedRoom] = useState();
 
-  const { buttonLabel, className } = props;
-
-  const [modal, setModal2] = useState(false);
-
-  const toggle2 = () => setModal2(!modal);
 
   var singleRoom = [
     { Room_no: 101, isBooked: true, Rooms_Img: fullroom1 },
@@ -130,7 +125,7 @@ const FullRoom = (props) => {
             <CardText
               className={cards.isBooked === true ? "isbook" : "notbook"}
             >
-              {buttonLabel}
+              
               {cards.Room_no}
             </CardText>
           </CardBody>
