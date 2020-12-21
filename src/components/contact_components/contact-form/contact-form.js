@@ -9,8 +9,26 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import "./contact-form.css";
+import {useState} from 'react';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+
+const [instate, setState] = useState({
+  FirstName: '',
+  LastName: '',
+  Email: '',
+  Phone: '',
+  Message: '',
+});
+
+const {FirstName, LastName, Email, Phone, Message} = instate
+
+const onChangeHandler = event => {
+  const { name, value } = event.currentTarget;
+
+  setState({...instate, [name]: value})
+};
+
   return (
     <div>
       <Container fluid>
@@ -46,9 +64,12 @@ const ContactForm = () => {
                   <FormGroup>
                     <Label for="exampleEmail">First name</Label>
                     <Input
+                    // onChange={Passing}
+                    name="FirstName"
+                    value={FirstName}
+                    onChange={event => onChangeHandler(event)}
                       style={{ borderRadius: "50px" }}
                       type="text"
-                      name="email"
                       id="exampleEmail"
                     />
                   </FormGroup>
@@ -57,9 +78,12 @@ const ContactForm = () => {
                   <FormGroup>
                     <Label for="examplePassword">Last name</Label>
                     <Input
+                    // onChange={Passing}
+                    name="LastName"
+                    value={LastName}
+                    onChange={event => onChangeHandler(event)}
                       style={{ borderRadius: "50px" }}
                       type="text"
-                      name="password"
                       id="examplePassword"
                     />
                   </FormGroup>
@@ -70,9 +94,12 @@ const ContactForm = () => {
                   <FormGroup>
                     <Label for="exampleEmail">E-mail</Label>
                     <Input
+                    //  onChange={Passing}
+                    name="Email"
+                    value={Email}
+                    onChange={event => onChangeHandler(event)}
                       style={{ borderRadius: "50px" }}
                       type="email"
-                      name="email"
                       id="exampleEmail"
                     />
                   </FormGroup>
@@ -81,9 +108,12 @@ const ContactForm = () => {
                   <FormGroup>
                     <Label for="examplePassword">Phone</Label>
                     <Input
+                    // onChange={Passing} 
+                    name="Phone"
+                    value={Phone}
+                    onChange={event => onChangeHandler(event)}
                       style={{ borderRadius: "50px" }}
                       type="number"
-                      name="password"
                       id="examplePassword"
                     />
                   </FormGroup>
@@ -92,20 +122,24 @@ const ContactForm = () => {
               <FormGroup>
                 <Label for="exampleText">Message</Label>
                 <Input
+                // onChange={Passing} 
+                name="Message"
+                value={Message}
+                onChange={event => onChangeHandler(event)}
                   style={{
                     borderRadius: "50px",
                     paddingTop: "50px",
                     paddingBottom: "50px",
                   }}
                   type="textarea"
-                  name="text"
                   id="exampleText"
                 />
               </FormGroup>
               <Button
-                type="submit"
+                onClick={() => props.Clicked(instate)}
+                // name : instate1,
+                // email : instate2
                 className="contact-send-button mt-4 mb-5"
-                style={{ width: "50%" }}
               >
                 Send Message
               </Button>
