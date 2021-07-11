@@ -12,14 +12,10 @@ import {
   faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
 
-import team1 from "../../images/about-chef-team1.jpg";
-import team2 from "../../images/about-chef-team2.jpg";
-import team3 from "../../images/about-chef-team3.jpg";
-import team4 from "../../images/about-chef-team4.jpg";
-import team5 from "../../images/about-chef-team5.jpg";
-import team6 from "../../images/about-chef-team6.jpg";
-import team7 from "../../images/about-chef-team7.jpg";
-import team8 from "../../images/about-chef-team8.jpg";
+import team1 from "../../images/about-chef-team2.jpg";
+import team2 from "../../images/about-chef-team4.jpg";
+import team3 from "../../images/about-chef-team7.jpg";
+import team4 from "../../images/about-chef-team8.jpg";
 
 import {
   faFacebookF,
@@ -129,7 +125,7 @@ const About = () => {
         </Row>
         <Row>
           <AboutOurTeam
-            avatar={team5}
+            avatar={team1}
             ChefName="Brenda Lopez"
             SubtitlePara="Booking Manager"
             teamicon1={faFacebookF}
@@ -139,7 +135,7 @@ const About = () => {
             teamicon5={faLinkedinIn}
           />
           <AboutOurTeam
-            avatar={team6}
+            avatar={team2}
             ChefName="Deborah Stewart"
             SubtitlePara="Accountant"
             teamicon1={faFacebookF}
@@ -149,7 +145,7 @@ const About = () => {
             teamicon5={faLinkedinIn}
           />
           <AboutOurTeam
-            avatar={team7}
+            avatar={team3}
             ChefName="Patrick Douglas"
             SubtitlePara="Porter"
             teamicon1={faFacebookF}
@@ -159,7 +155,7 @@ const About = () => {
             teamicon5={faLinkedinIn}
           />
           <AboutOurTeam
-            avatar={team8}
+            avatar={team4}
             ChefName="Sam Marshall"
             SubtitlePara="Floor Manager"
             teamicon1={faFacebookF}
